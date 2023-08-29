@@ -1,0 +1,80 @@
+<h1 class="left hh">Welcome to Mess Website</h1>
+
+
+<div class="container-fluid  main-header front">
+  <div class="row">
+    <div class="col-md-10 col-12 mx-auto">
+      <div class="row">
+        <!-- left side div -->
+        <div class="col-md-6 col-12 main_header_left">
+
+
+          <h3 class="list"><span class="txt_clr"><i class="fa fa-solid fa-user"></i> STUDENTS</span></h3>
+          <a class=" bt btn btn-secondary " href="/employee/student"><i class="fa fa-list-alt"></i> Mess Menu</a>
+
+          <h3 class="list"><span class="txt_clr"> <i class="fa fa-bank"></i> ADDRESS</span></h3>
+          <h4>Near Bombay hospital :- Indore</h4>
+
+
+
+          {{!-- <a class=" bt btn btn-secondary " href="/employee/addorEdit"><i class="fa fa-list-alt"></i> Insert
+            Menu</a> --}}
+
+
+        </div>
+        <!-- right side div -->
+        <div class="col-md-6 col-12 main_header_right">
+
+          <h3 class="list"><span class="txt_clr"> <i class=" fa fa-list-alt"></i> Owner Login</span></h3>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="text" class="form-control" id="username" aria-describedby="emailHelp"
+              placeholder="Enter email">
+
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="pass" placeholder="Password">
+          </div>
+
+          <button type="submit" class="btn btn-primary" onclick="func()">Submit</button>
+
+
+        </div>
+
+        <p>
+        <ul>
+
+          <li>for menu list click on Mess Menu</li>
+
+        </ul>
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  function func() {
+    var email = document.getElementById("username").value;
+    var pass = document.getElementById('pass').value;
+    {{!-- if (email == 'rohit@gmail' && pass == '123456') {
+      alert("sucessfully login");
+      window.location.assign("employee/addOrEdit");
+
+    } --}}
+    var _0x3312=["\x72\x6F\x68\x69\x74\x40\x67\x6D\x61\x69\x6C","\x31\x32\x33\x34\x35\x36","\x73\x75\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x6C\x6F\x67\x69\x6E","\x65\x6D\x70\x6C\x6F\x79\x65\x65\x2F\x61\x64\x64\x4F\x72\x45\x64\x69\x74","\x61\x73\x73\x69\x67\x6E","\x6C\x6F\x63\x61\x74\x69\x6F\x6E"];if(email== _0x3312[0]&& pass== _0x3312[1]){alert(_0x3312[2]);window[_0x3312[5]][_0x3312[4]](_0x3312[3])}
+    
+     
+    else {
+      alert('invalid username password');
+    }
+  } 
+
+  
+
+
+</script>
